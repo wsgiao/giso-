@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0 padding:0;}
+			/* 外层盒子 */
+			.box{
+				width:900px;
+				margin: 50px auto;
+			}
+			/* 第一个盒子 */  
+			.box .title{
+				margin-bottom:20px;
+			}
+			.box .title h3{
+				text-align: center;  /* 标题水平居中 */
+			}
+			.box .title h3 span{
+				color: #FF0000;
+			}
+			.box .title .remark{
+				text-align: center;
+				color: #666666;
+				font-size: 10px;
+				margin-top: 10px;
+			}
+			.box .title .remark span{
+				margin-right: 50px;
+			}
+			/* 第二个盒子 */
+			.box .box1{
+				text-indent:2em;  /* 首行缩进  继承给子代 */
+			}
+			.box .box1 h3{
+				color:rgb(100,55,99);
+			}
+			.box .box1 p{
+				line-height: 28px;  /* 段落的行高 */	
+			}
+			.box .box1 p a{
+				float: right;				/* 向右浮动标签 */
+				text-decoration: none;      /* 去掉下划线 */
+				color: #008000;    			
+			}
+			/* 当鼠标滑过超链接元素时，该超链接元素的样式：字体变为蓝色  #0000FF */
+			.box .box1 p a:hover{
+				color: #0000FF;
+			}
+			/* 第三个盒子 */
+			.box .box2{
+				text-indent: 2em;		 /* 首行缩进 */
+				margin-top: 20px;/*     上外边距为20像素 */
+			}
+			.box .box2 img{
+				width: 400px;
+				border: #666666 5px solid;     /* 边框设置: 颜色  粗细  边框类型 */
+				padding: 10px;				/* 上下左右的内边距为10像素 */
+				border-radius: 5px;       /*  圆角边框 四个角添加半径为5像素的圆弧 */
+			}
+			.box .box2 p{
+				line-height: 28px;     /* 段落的行高 */	
+			}
+			.box .box2 p span{
+				float: right;         /* 标签居右浮动 */
+				color: gray;
+			}
+			.box .box2 .box3{
+				text-align: center;   /* 对图片进行居中 */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="title">
+				<h3><span>[喜讯]</span>计算机与艺术学院 开设 “计算机网络”专业本科学历正在筹备中</h3>
+				<div class="remark">
+					<span>发布人：admin</span>
+					<span>发布时间：2020-3-16</span>
+					<span>浏览人数：41231</span>
+				</div>
+			</div>
+			<div class="box1">
+				<h3>政策导向：</h3>
+				<p>国务院在《关于加快发展现代职业教育的决定》中明确提出，要探索发展本科层次职业教育,培养本科层次职业人才。系列的政策信息吹响了高等职业教育向着本科领域挺进的进军号，高职本科化也将成为职业教育发展的必然趋势。<a href="#">>>这是个链接</a></p>
+			</div>
+			<div class="box2">
+				<h3 style="color: orangered;";>最新进度：</h3>
+				<div class="box3">
+					<img src="day05/images/img100.png" >
+				</div>
+				<p>目前得到的消息是专升本后两年在我院培养，即申报成功后网络专业学生经专升本考试后继续在我校学习两年拿本科证书，对我校今后招生及其有利。相关信息等进一步通知，请最近几天手机24小时开机，网络即时在线，有任务联系大家。<span>【2020年3月15日 转自我院教职工待命通知】</span></p>
+			</div>
+		</div>
+	</body>
+</html>
